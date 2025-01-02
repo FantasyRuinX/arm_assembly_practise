@@ -1,13 +1,12 @@
 
 .global _start
-
 .section .data
-message : .asciz "Hello World\n"
+message: .asciz "Hello World\n"
 
 .section .text
 
- _start :
-    mov r0, #1
+_start:
+    mov r0,#1
     ldr r1, =message
     mov r2, #14
     mov r7, #4
