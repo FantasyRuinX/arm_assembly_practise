@@ -1,7 +1,7 @@
 
 .section .data
 buffer : .space 100
-msg : .asciz "Inputed : "
+msg : .asciz "Inputed : \n"
 
 .global _start
 .section .text
