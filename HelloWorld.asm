@@ -12,6 +12,10 @@ _start:
     mov r7, #4
     svc #0
 
-    mov r0, #0
-    mov r7, #1
+    bl _exit
+
+_exit:
+    mov r7,#1
+    mov r0,#0
     svc #0
+    
