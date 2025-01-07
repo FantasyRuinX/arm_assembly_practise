@@ -11,6 +11,7 @@ else
 fi
 
 if qemu-arm --version | grep "qemu-arm"; then
+    clear
     qemu-arm "./$tempName"
 else
     echo "Please install qemu-arm to use this script"
